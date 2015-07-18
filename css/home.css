@@ -1,4 +1,4 @@
-img{
+img.profile_pic{
     width: 200px;
     height: auto;
 }
@@ -10,6 +10,4 @@ img{
 
 .home_carousel {
     margin-top: 80px;
-    background-color: white;
-    background-image: "images/cover_background.png";
 }
