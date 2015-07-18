@@ -1,0 +1,4 @@
+img.profile_pic.resize{
+    width: 540px;
+    height: auto;
+}

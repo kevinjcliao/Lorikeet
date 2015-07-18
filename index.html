@@ -1,56 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" ng-app="kevinliao_website">
+    <head>
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Your page title here :)</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+        <!-- Basic Page Needs
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta charset="utf-8">
+        <title>Your page title here :)</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Mobile Specific Metas
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+        <!-- FONT
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
+        <!-- CSS
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/home.css">
 
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+        <!-- Favicon
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link rel="icon" type="image/png" href="images/favicon.png">
 
-</head>
-<body>
+        <!-- Angular
+        -------------------------------------------------- -->
+        <script type="text/javascript" src="angular.min.js" ></script>
+        <script type="text/javascript" src="app.js"></script>
+    </head>
+    <body ng-controller="home_page as home">
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="container">
-        <div class="menu">
-            <ul class="navbar-list">
-                <li class="navbar-item">Item 1</li>
-                <li class="navbar-item">Item 2</li>
-            </ul>
-        </div>
-        <div class="row">
-            <div class="one-half column" style="margin-top: 25%">
-                <p>Hello</p>
+        <!-- Primary Page Layout
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div class="container">
+            <div class="row">
+                <div class="one-half column" style="margin-top: 25%">
+                    <img class="profile_pic" ng-src="{{home.homePageData.profile_pic}}">
+                    <p>See? You can trust me.</p>
+                </div>
+                <div class="one-half column" style="margin-top: 25%">
+                    <h4>{{home.homePageData.title}}</h4>
+                    <p>{{home.homePageData.greeting}}</p>
+                    <div class="row">
+                        <div class="five columns">
+                            <button>Resume</button>
+                        </div>
+                        <div class="three columns">
+                            <button>Contact me</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="one-half column" style="margin-top: 25%">
-                <h4>Kevin Liao</h4>
-                <p>Hi. My name is Kevin Liao and I'm a full-stack developer based in Taiwan and the United States, ready to work for you.</p>
-                <button>See My Resume</button>
-            </div>
         </div>
-    </div>
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-</body>
+        <!-- End Document
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    </body>
 </html>
