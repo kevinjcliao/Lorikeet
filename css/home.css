@@ -3,14 +3,21 @@ img.profile_pic{
     height: auto;
 }
 
-.navbar {
-    background-image: none;
-    background-color: black;
-    opacity: 0.75;
+.content {
+    margin-top: 5em;
 }
 
-.content {
-    margin-top: 20px;
+.buttons {
+    margin-left: 0px;
+}
+
+.buttons .btn {
+    margin-right: 1em;
+}
+
+.skills {
+    margin-top: 5em;
+    margin-bottom: 3em;
 }
 
 .home_skill_title {
@@ -24,8 +31,8 @@ img.profile_pic{
 .footer {
     background-color: black;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding-top: 5em;
+    padding-bottom: 1em;
 }
 
 .footer p {
