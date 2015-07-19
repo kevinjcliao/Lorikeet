@@ -5,9 +5,9 @@
         <!-- Basic Page Needs
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <meta charset="utf-8">
-        <title>Your page title here :)</title>
+        <title>Kevin Liao</title>
         <meta name="description" content="">
-        <meta name="author" content="">
+        <meta name="author" content="Kevin Liao">
 
         <!-- Mobile Specific Metas
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -29,6 +29,7 @@
 
         <!-- My Custom CSS -->
         <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/custom.css">
 
         <!-- Angular
         -------------------------------------------------- -->
@@ -50,7 +51,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Project name</a>
+                    <a class="navbar-brand" href="#">Kevin Liao</a>
                 </div>
                 <div id="navbar" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav pull-right">
@@ -76,7 +77,7 @@
                 <div class="item active">
                     <img src="images/cover_background.png" alt="...">
                     <div class="carousel-caption">
-                        <h3>Caption Text</h3>
+                        <h3>From Taiwan. With &hearts;</h3>
                     </div>
                 </div>
                 <div class="item">
@@ -101,36 +102,37 @@
                 <span class="glyphicon glyphicon-chevron-right"></span>
             </a>
         </div> <!-- Carousel -->
-        <div class="container">
+
+
+        <!-- Begin Content -->
+        <div class="container content">
             <div class="row">
                 <div class="col-md-6">
                     <img class="profile_pic" ng-src="{{home.homePageData.profile_pic}}">
                     <p>See? You can trust me.</p>
                 </div>
                 <div class="col-md-6">
-                    <h4>{{home.homePageData.title}}</h4>
+                    <h2>{{home.homePageData.title}}</h2>
                     <p>{{home.homePageData.greeting}}</p>
                     <div class="row">
-                        <div class="five columns">
                             <button>Resume</button>
-                        </div>
-                        <div class="three columns">
                             <button>Contact me</button>
-                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    Hello World
-                </div>
-                <div class="col-md-4">
-                    Hello World
-                </div>
-                <div class="col-md-4">
-                    Hello World
+            <div class="skills">
+                <h3 class = "home_skill_title">What can I code?</h3>
+                <div class="row">
+                    <div class="col-md-4 individual_skill" ng-repeat="skill in home.homeSkills">
+                        <h4>{{skill.name}}</h4>
+                        <p>{{skill.description}}</p>
+                    </div>
                 </div>
             </div>
+        </div>
+
+        <div class="footer">
+            <p>Proudly made in Taiwan with &hearts;</p>
         </div>
 
         <!-- End Document

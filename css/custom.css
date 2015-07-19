@@ -1,0 +1,32 @@
+/* Converting all the fonts to ems rather than px */
+body {
+    font-size: 100%;
+}
+
+h1 {
+    font-size: 3.6em; /* 36/10 */
+}
+
+h2 {
+    font-size: 2.4em; /* 24/10 */
+}
+
+h3 {
+    font-size: 2.1em;
+}
+
+h4 {
+    font-size: 1.8em;
+}
+
+h5 {
+    font-size: 1.6em;
+}
+
+p {
+    font-size: 1.6em;
+}
+
+a {
+    font-size: 1.6em;
+}

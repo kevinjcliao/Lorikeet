@@ -32,6 +32,9 @@
             name: "Polititrends",
             description: "A web app that allows you to research how the New York Times' political leanings have changed on an issue over time.",
             technologies: "HTML, CSS, JavaScript, Python, indico.io, Google App Engine",
-        }, 
+        },
+        {
+            name: "SeptaWatch",
+            description: "An app for the Pebble Smartwatch that allows you to 
     ];
 })();

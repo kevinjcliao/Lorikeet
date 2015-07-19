@@ -6,8 +6,28 @@ img.profile_pic{
 .navbar {
     background-image: none;
     background-color: black;
+    opacity: 0.75;
 }
 
-.home_carousel {
-    margin-top: 80px;
+.content {
+    margin-top: 20px;
+}
+
+.home_skill_title {
+    text-align: center;
+}
+
+.individual_skill h4 {
+    text-align: center;
+}
+
+.footer {
+    background-color: black;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.footer p {
+    color: white;
 }
